@@ -1,0 +1,238 @@
+
+@font-face {
+  font-family: "FSMeWeb-Bold";
+  src: url("assets/fonts/FSMeWeb-Bold_ce2eoa.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FSMeWeb-Regular";
+  src: url("assets/fonts/FSMeWeb-Regular_rcfffc.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+h1,
+p,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: "FSMeWeb-Regular", Arial, sans-serif;
+}
+
+.background-image {
+  width: 100%;
+  height: 600px;
+  background: url("assets/images/HeaderImage.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+
+.cta-box {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.cta-box h1 {
+  color: #333333;
+  font-family: "FSMeWeb-Bold", Arial, sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cta-box p {
+  color: #757575;
+  font-family: "FSMeWeb-Regular", Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+.cta-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #008caa;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none; 
+}
+
+.cta-button:hover {
+  background-color: #0b6072;
+}
+
+
+.container-fluid {
+  position: relative;
+  background-color: #008caa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 1rem;
+  overflow: hidden;
+}
+
+
+.accordion-container {
+  width: 800px;
+  position: relative;
+  z-index: 2;
+}
+
+
+.container-fluid::before,
+.container-fluid::after {
+  content: "";
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+.container-fluid::before,
+.container-fluid::after {
+  top: 50%;
+  width: 250px;
+  height: 250px;
+  transform: translateY(-50%);
+}
+
+.container-fluid::before {
+  left: 5%;
+  background-image: url("assets/images/Illustration_1.svg");
+}
+
+.container-fluid::after {
+  right: 0%;
+  background-image: url("assets/images/Illustration_2.svg");
+}
+.divider {
+  display: inline-block; 
+  width: 50px; 
+  height: 4px; 
+  background-color: #ffcc00; 
+  vertical-align: middle;
+  bottom:10%;
+}
+
+#accordion {
+  background: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card {
+  margin-bottom: 0.75rem;
+  background: none;
+  border: none;
+}
+
+.card-header {
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 4px;
+}
+
+.card-header h5 {
+  margin-bottom: 0;
+}
+
+.card-body {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.btn-link {
+  display: block;
+  width: 100%;
+  text-align: left;
+  color: #333;
+  font-family: "FSMeWeb-Regular", Arial, sans-serif;
+  font-weight: bold;
+  background: transparent url("assets/images/Accordian_arrow.svg") no-repeat
+    right 20px center;
+  background-size: 24px;
+  padding-right: 50px;
+  border: none; 
+  text-decoration: none;
+}
+
+.btn-link[aria-expanded="true"] {
+    background-image: url("assets/images/up-arrow.svg");
+}
+.btn-link[aria-expanded="false"] {
+  background-image: url("assets/images/down-arrow.svg");
+}
+
+.card-header .btn-link:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.card-header .btn-link:hover {
+  background-color: #ececec;
+}
+
+.card-header .btn-link {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #000000;
+  font-weight: 800;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .background-image {
+    height: 500px;
+  }
+
+  .cta-box {
+    top: 75%;
+    width: 90%;
+    right: 5%;
+    left: 5%;
+  }
+
+  .accordion-container {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .container-fluid::before,
+  .container-fluid::after {
+    display: none;
+  }
+
+  .cta-box h1 {
+    font-size: 20px;
+  }
+
+  .cta-box p {
+    font-size: 14px;
+  }
+
+  .cta-button {
+    padding: 12px;
+  }
+
+  .card-header .btn-link {
+    padding: 15px;
+    font-size: 16px;
+    background-position: right 15px center;
+  }
+}

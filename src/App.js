@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Accordion from './components/Accordion';
+import "./style.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <section className="hero">
+        <div className="background-image">
+          <div className="cta-box">
+            <h1>Poverty is not God’s plan. You are.</h1>
+            <p>
+              Your gift will transform lives and play a part in ending extreme
+              poverty and injustice around the world.
+            </p>
+            <button className="cta-button">Donate now</button>
+          </div>
+        </div>
+      </section>
+      <Accordion/>
+      
     </div>
   );
 }
