@@ -1,5 +1,5 @@
 import React from "react";
-import Accordion from './components/Accordion';
+import Accordion from "./components/Accordion";
 import "./style.css";
 
 function App() {
@@ -17,8 +17,7 @@ function App() {
           </div>
         </div>
       </section>
-      <Accordion/>
-      
+      <Accordion />
     </div>
   );
 }

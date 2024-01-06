@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "FSMeWeb-Bold";
   src: url("assets/fonts/FSMeWeb-Bold_ce2eoa.woff2") format("woff2");
@@ -29,7 +28,6 @@ button {
   position: relative;
 }
 
-
 .cta-box {
   position: absolute;
   top: 50%;
@@ -56,7 +54,6 @@ button {
   margin-bottom: 10px;
 }
 
-
 .cta-button {
   display: block;
   width: 100%;
@@ -65,13 +62,12 @@ button {
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
-  border: none; 
+  border: none;
 }
 
 .cta-button:hover {
   background-color: #0b6072;
 }
-
 
 .container-fluid {
   position: relative;
@@ -84,13 +80,11 @@ button {
   overflow: hidden;
 }
 
-
 .accordion-container {
   width: 800px;
   position: relative;
   z-index: 2;
 }
-
 
 .container-fluid::before,
 .container-fluid::after {
@@ -119,12 +113,12 @@ button {
   background-image: url("assets/images/Illustration_2.svg");
 }
 .divider {
-  display: inline-block; 
-  width: 50px; 
-  height: 4px; 
-  background-color: #ffcc00; 
+  display: inline-block;
+  width: 50px;
+  height: 4px;
+  background-color: #ffcc00;
   vertical-align: middle;
-  bottom:10%;
+  bottom: 10%;
 }
 
 #accordion {
@@ -166,15 +160,15 @@ button {
     right 20px center;
   background-size: 24px;
   padding-right: 50px;
-  border: none; 
+  border: none;
   text-decoration: none;
 }
 
 .btn-link[aria-expanded="true"] {
-    background-image: url("assets/images/up-arrow.svg");
+  background-image: url("assets/images/up-arrow.png");
 }
 .btn-link[aria-expanded="false"] {
-  background-image: url("assets/images/down-arrow.svg");
+  background-image: url("assets/images/down-arrow.png");
 }
 
 .card-header .btn-link:focus {
